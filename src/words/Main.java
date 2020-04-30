@@ -14,12 +14,33 @@ public class Main{
         //     wordsArrayList.remove(i);
 
         // }
-        displayList(wordsArrayList);
+        HashMap<String, Integer> wordsHashMap = new HashMap<String, Integer>();
+        int hashcount = 1;
+        int count = 1;
+        for (String w: wordsArrayList){
+            wordsHashMap.put(w, hashcount);
+            hashcount++;
+        }
+        for (String s: wordsHashMap.keySet()){
+           for(int i=wordsHashMap.size()-1; i>=0 ; i--){
+        //         if(wordsHashMap.containsKey(s)){
+        //             wordsHashMap.put( s, count  );
+        //             count ++;
+        //             // wordsHashMap.remove(s, i);
+        //         }
+            //     if (s.equalsIgnoreCase()
+            // count++;
+           } 
+            
+        }
+        System.out.println(wordsHashMap);
+
+        // displayList(wordsArrayList);
     }
 
-    private static void displayList(ArrayList<String> al) {
-        for (String a : al) {
-            System.out.println(a);
-        }
-    }
+    // private static void displayList(ArrayList<String> al) {
+    //     for (String a : al) {
+    //         System.out.println(a);
+    //     }
+    // }
 }
